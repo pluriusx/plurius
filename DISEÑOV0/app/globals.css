@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme inline {
+  --font-sans: var(--font-work-sans), 'Work Sans', system-ui, sans-serif;
+
+  --color-canvas:        #ECEEF1;
+  --color-surface:       #FFFFFF;
+  --color-ink:           #0F1117;
+  --color-ink-2:         #6B7280;
+  --color-ink-3:         #9CA3AF;
+  --color-border:        rgba(0,0,0,0.07);
+
+  --color-cyan:          #0891B2;
+  --color-cyan-dark:     #0E7490;
+  --color-cyan-xlight:   #F0F9FF;
+  --color-cyan-light:    #E0F2FE;
+
+  --color-green:         #10B981;
+  --color-green-light:   #DCFCE7;
+  --color-green-ink:     #065F46;
+  --color-amber:         #F59E0B;
+  --color-amber-light:   #FEF3C7;
+  --color-amber-ink:     #92400E;
+  --color-red:           #EF4444;
+  --color-red-light:     #FEE2E2;
+  --color-red-ink:       #991B1B;
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #ECEEF1;
+    color: #0F1117;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* White card — standard */
+  .card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow:
+      0 1px 2px rgba(0,0,0,0.04),
+      0 2px 8px rgba(0,0,0,0.03);
+  }
+
+  /* Cyan accent card */
+  .card-cyan {
+    background: #0891B2;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 6px 20px rgba(8,145,178,0.28);
+  }
+}
