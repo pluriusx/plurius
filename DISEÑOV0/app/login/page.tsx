@@ -1,23 +1,19 @@
 'use client'
 
-import { Building2 } from 'lucide-react'
 import { signIn } from 'next-auth/react'
 import Link from 'next/link'
+
+import { BrandLogo } from '@/components/brand-logo'
 
 export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#ECEEF1] px-4">
       <div className="w-full max-w-sm">
-        {/* Logo */}
         <div className="mb-8 flex flex-col items-center">
-          <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0891B2]">
-            <Building2 size={24} color="white" strokeWidth={2} />
-          </div>
-          <h1 className="text-[22px] font-bold tracking-tight text-gray-900">Inmos.ia</h1>
+          <BrandLogo width={160} height={39} priority className="h-auto w-[160px]" />
           <p className="mt-1 text-[14px] text-gray-500">Ingresá a tu panel de gestión</p>
         </div>
 
-        {/* Card */}
         <div
           className="rounded-3xl bg-white p-8"
           style={{
@@ -57,7 +53,6 @@ export default function LoginPage() {
           </div>
         </div>
 
-        {/* Back link */}
         <div className="mt-6 text-center">
           <Link
             href="/"

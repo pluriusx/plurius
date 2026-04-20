@@ -1,6 +1,8 @@
 import { Building2, ChevronRight, Globe, LayoutDashboard, MessageSquare, Palette, Sparkles, Zap } from 'lucide-react'
 import Link from 'next/link'
 
+import { BrandLogo } from '@/components/brand-logo'
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -8,10 +10,7 @@ export default function LandingPage() {
       <nav className="fixed inset-x-0 top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           <div className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0891B2]">
-              <Building2 size={16} color="white" strokeWidth={2.2} />
-            </div>
-            <span className="text-[17px] font-bold tracking-tight text-gray-900">Inmos.ia</span>
+            <BrandLogo width={126} height={31} priority className="h-auto w-[126px]" />
           </div>
 
           <div className="flex items-center gap-3">
@@ -181,13 +180,10 @@ export default function LandingPage() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#0891B2]">
-                <Building2 size={14} color="white" strokeWidth={2.2} />
-              </div>
-              <span className="text-[15px] font-bold text-gray-900">Inmos.ia</span>
+              <BrandLogo width={118} height={29} className="h-auto w-[118px]" />
             </div>
             <p className="text-[13px] text-gray-400">
-              &copy; {new Date().getFullYear()} Inmos.ia. Todos los derechos reservados.
+              &copy; {new Date().getFullYear()} Plurius. Todos los derechos reservados.
             </p>
           </div>
         </div>
